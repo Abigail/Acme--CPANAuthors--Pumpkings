@@ -7,6 +7,27 @@ no  warnings 'syntax';
 
 our $VERSION = '2009111801';
 
+use Acme::CPANAuthors::Register (
+    q <LWALL>    => qq <Larry Wall>,
+    q <ANDREWD>  => qq <Andy Dougherty>,
+    q <TOMC>     => qq <Tom Christiansen>,
+    q <CBAIL>    => qq <Charles Bailey>,
+    q <NI-S>     => qq <Nick Ing-Simmons>,
+    q <CHIPS>    => qq <Chip Salzenberg>,
+    q <TIMB>     => qq <Tim Bunce>,
+    q <MICB>     => qq <Malcolm Beattie>,
+    q <GSAR>     => qq <Gurusamy Sarathy>,
+    q <GBARR>    => qq <Graham Barr>,
+    q <JHI>      => qq <Jarkko Hietaniemi>,
+    q <HVDS>     => qq <Hugo van der Sanden>,
+    q <MSCHWERN> => qq <Michael Schwern>,
+    q <RGARCIA>  => qq <Rafa\x{EB}l Garcia-Suarez>,
+    q <NWCLARK>  => qq <Nicholas Clark>,
+    q <RCLAMP>   => qq <Richard Clamp>,
+    q <LBROCARD> => qq <L\x{E9}on Brocard>,
+    q <DAPM>     => qq <Dave Mitchell>,
+    q <JESSE>    => qq <Jesse Vincent>,
+);
 
 1;
 
@@ -14,22 +35,31 @@ __END__
 
 =head1 NAME
 
-Acme::CPANAuthors::Pumpkings - Abstract
+Acme::CPANAuthors::Pumpkings - We are pumpkings.
 
 =head1 SYNOPSIS
 
+ use Acme::CPANAuthors;
+
+ my $authors  = Acme::CPANAuthors -> new ("Pumpkings");
+
+ my $number   = $authors -> count;
+ my @ids      = $authors -> id;
+ my @distros  = $authors -> distributions ("LWALL");
+ my $url      = $authors -> avatar_url    ("LWALL");
+ my $kwalitee = $authors -> kwalitee      ("LWALL");
+ my $name     = $authors -> name          ("LWALL");
+
+See documentation for Acme::CPANAuthors for more details.
+
 =head1 DESCRIPTION
 
-=head1 BUGS
-
-=head1 TODO
-
-=head1 SEE ALSO
+This class provides a hash of PAUSE IDs and names of the Pumpkings.
 
 =head1 DEVELOPMENT
 
 The current sources of this module are found on github,
-L<< git://github.com/Abigail/Acme--CPANAuthors--Pumpkings.git >>.
+L<< git://github.com/Abigail/Acme--CPANAuthors--CPANTS--Pumpkings.git >>.
 
 =head1 AUTHOR
 
