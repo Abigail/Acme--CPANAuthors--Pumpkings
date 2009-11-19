@@ -1,2 +1,5 @@
+Version 2009111901
++ Don't require Test::NoWarnings.
+
 Version 2009111801
 + First release

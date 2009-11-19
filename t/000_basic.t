@@ -6,9 +6,9 @@ use strict;
 use warnings;
 no  warnings 'syntax';
 
-use Test::More tests => 7;
-use Test::NoWarnings;
+our $r = eval "require Test::NoWarnings; 1";
 
+use Test::More 0.88;
 use Acme::CPANAuthors;
 
 BEGIN {
@@ -27,3 +27,7 @@ ok $authors -> count, "There are pumpkings";
 my @ids = $authors -> id;
 ok scalar @ids, "There are ids";
 ok $authors -> name ("LWALL"), "Find a name";
+
+Test::NoWarnings::had_no_warnings () if $r;
+
+done_testing;
