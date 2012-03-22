@@ -5,7 +5,7 @@ use strict;
 use warnings;
 no  warnings 'syntax';
 
-our $VERSION = '2012030201';
+our $VERSION = '2012032201';
 
 use Acme::CPANAuthors::Register (
     q <LWALL>    => qq <Larry Wall>,
@@ -39,6 +39,7 @@ use Acme::CPANAuthors::Register (
     q <STEVAN>   => qq <Stevan Little>,
     q <DROLSKY>  => qq <Dave Rolsky>,
     q <CORION>   => qq <Max Maischein>,
+    q <ABIGAIL>  => qq <Abigail>,
 );
 
 1;
