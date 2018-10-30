@@ -40,6 +40,14 @@ use Acme::CPANAuthors::Register (
     q <DROLSKY>  => qq <Dave Rolsky>,
     q <CORION>   => qq <Max Maischein>,
     q <ABIGAIL>  => qq <Abigail>,
+    q <ARC>      => qq <Aaron Crane>,
+    q <GENEHACK> => qq <John SJ Anderson>,
+    q <RENEEB>   => qq <Ren\x{E9}e B\x{E4}cker>,
+    q <ETHER>    => qq <Karen Etheridge>,
+    q <TODDR>    => qq <Todd Rinaldo>,
+    q <WOLFSAGE> => qq <Matthew Horsfall>,
+    q <EHERMAN>  => qq <Eric Herman>,
+    q <EXODIST>  => qq <Chad Granum>,
 );
 
 1;
